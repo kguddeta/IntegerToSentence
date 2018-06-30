@@ -21,12 +21,12 @@ string sevenDigit(int num);
 string numberToString(int num);
 int main(){
     int number, digit;
-    cout<<"Enter a number : ";
+    cout<<"\n Enter a number : ";
     cin>>number;
     digit = countDigit(number);
     string st = numberToString(number);
-    cout<<"You entered a "<<digit<<", number : "<<number<<endl;
-    cout<<"Its string equivalent : "<<st;
+    cout<<" You entered a "<<digit<<", number : "<<number<<endl;
+    cout<<" Its string equivalent : "<<st;
 }
 int countDigit(int num){
     int counter = 0;
