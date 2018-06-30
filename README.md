@@ -1,12 +1,9 @@
 # NumberToString
 C++ program that convert a number to a string
 
-Input         Output
+Input : 123890         
 
-123           "one hundred twenty three"
+Output :  one hundred twenty three thousand eight hundred ninety
 
-123890        "one hundred twenty three thousand eight hundred ninety"
-
-50009         " fifty thousand nine"
 
 
