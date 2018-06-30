@@ -100,15 +100,22 @@ string sixDigit(int num){
     return threeDigit(num/1000) + " "+str4[1]+" "+ threeDigit(num%1000);
 }
 string sevenDigit(int num){
-    return threeDigit(num/1000000) +" "+str4[2] + " "+sixDigit(num%1000000);
+    if(num%1000000 <10)
+        return threeDigit(num/1000000) +" "+str4[2] + " "+ signleDigit(num%1000000);
+    else if(num%1000000 <100)
+        return threeDigit(num/1000000) +" "+str4[2] + " "+ doubleDigit(num%1000000);
+    else if(num%1000000 <1000)
+        return threeDigit(num/1000000) +" "+str4[2] + " "+threeDigit(num%1000000);
+    else if(num%1000000 <10000)
+        return threeDigit(num/1000000) +" "+str4[2] + " "+fourDigit(num%1000000);
+    else if(num%1000000 <100000)
+        return threeDigit(num/1000000) +" "+str4[2] + " "+fiveDigit(num%1000000);
+    else
+        return threeDigit(num/1000000) +" "+str4[2] + " "+sixDigit(num%1000000);
 }
 string numberToString(int num){
     NumStr ns = countDigit(num);
-    int digit = ns.num;
-    string str = "";
-    string tempString;
-
-    switch(digit){
+    switch(ns.num){
         case 1 : if(num==0) return "zero";
                   else{
                     return signleDigit(num);
