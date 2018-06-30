@@ -1,8 +1,6 @@
 # NumberToString
 C++ program that convert a number to a string
 
-If a user enters : 
-
 Input         Output
 
 123           "one hundred twenty three"
