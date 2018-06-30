@@ -1,5 +1,5 @@
 # NumberToString
-C++ program that convert a number to a string
+C++ program that convert a an integer number to a sentence 
 
 Input : 123890         
 
